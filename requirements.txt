@@ -1,4 +1,7 @@
-pylint==3.3.2
-ruff==0.8.2
-homeassistant==2024.12.1
-mr_star_ble==0.3.2
+pylint==3.3.9
+ruff==0.14.2
+homeassistant==2026.9.3
+mr_star_ble==0.4.1
+bleak-retry-connector>=4.7.0
+pytest==8.4.2
+pytest-asyncio==1.2.0

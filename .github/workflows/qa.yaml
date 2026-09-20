@@ -11,12 +11,15 @@ jobs:
         uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.12' 
+          python-version: '3.14' 
       - name: Install dependencies
         run: make configure
 
       - name: Check code style
         run: make lint
+
+      - name: Run tests
+        run: make test
 
   hassfest:
     runs-on: "ubuntu-latest"
